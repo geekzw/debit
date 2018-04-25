@@ -1,0 +1,93 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F3F4F5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#00a6ff"
+            android:text="工具"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/xiaoe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xiaoe"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/xinyong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xinyong"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/fangdai"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fangdai"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/gongjijin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gongjijin"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/zuhefang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zuhefang"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/xinyongka"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xinyongka"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>
