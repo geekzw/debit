@@ -18,7 +18,7 @@ public class MyApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        AVOSCloud.initialize(this,"QGSs41nGgfDofETOfRgAKdSj-gzGzoHsz", "fmavP4Ny83CAmboSlDCWpQl3");
+        AVOSCloud.initialize(this,"hJgTPWA6zlnYO8EyvCoOBRQ8-gzGzoHsz", "ibnnAKyfmK4gLz76H7oGzpHa");
         AVOSCloud.setDebugLogEnabled(true);
         AVAnalytics.enableCrashReport(this, true);
     }

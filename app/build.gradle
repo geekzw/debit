@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.gujian.debitapp"
         minSdkVersion 16
@@ -11,9 +11,9 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-        jackOptions {
-            enabled = true
-        }
+//        jackOptions {
+//            enabled = true
+//        }
     }
     aaptOptions.cruncherEnabled = false
     aaptOptions.useNewCruncher = false
@@ -73,6 +73,9 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'cn.leancloud.android:avoscloud-sdk:v3.+'
     compile 'cn.leancloud.android:avoscloud-statistics:v3.+'
+    compile 'com.baidu.mobstat:mtj-sdk:latest.integration'
 //    compile 'com.alibaba:fastjson:1.1.64.android'
+
+    compile project(path: ':pickerview')
     testCompile 'junit:junit:4.12'
 }

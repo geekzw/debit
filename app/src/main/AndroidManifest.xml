@@ -9,6 +9,11 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name=".MyApp"
@@ -29,11 +34,19 @@
         <activity android:name=".base.HeaderActivity" />
         <activity android:name=".activity.ListDetaileActivity" />
         <activity android:name=".activity.WebViewActivity" />
-        <activity android:name=".activity.LoginActivity"></activity>
+        <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.RegisterActivity" />
         <activity android:name=".activity.KeFuActivity" />
         <activity android:name=".activity.HelpActivity" />
-        <activity android:name=".activity.MessageActivity"></activity>
+        <activity android:name=".activity.MessageActivity" />
+
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="02bbc4e70c" />
+
+        <activity android:name=".activity.CollectionInfo">
+
+        </activity>
     </application>
 
 </manifest>

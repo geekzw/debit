@@ -7,6 +7,7 @@ import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.baidu.mobstat.StatService;
 import com.gujian.debitapp.R;
 import com.gujian.debitapp.base.HeaderActivity;
 import com.gujian.debitapp.databinding.ActivityMainBinding;
@@ -35,6 +36,7 @@ public class MainActivity extends HeaderActivity<ActivityMainBinding> {
 
     @Override
     protected void afterViewCreated(Bundle savedInstanceState) {
+        StatService.start(this);
         hiddenHeader();
         binding = getContentBinding();
         binding.navLayout.setIconRes(iconRes)//设置未选中图标

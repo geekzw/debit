@@ -7,10 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
+import android.text.TextUtils;
 import android.text.style.ForegroundColorSpan;
 
 import com.avos.avoscloud.AVObject;
 import com.bumptech.glide.Glide;
+import com.gujian.debitapp.MyApp;
 import com.gujian.debitapp.R;
 import com.gujian.debitapp.base.HeaderActivity;
 import com.gujian.debitapp.databinding.ActivityListDetaileBinding;
@@ -54,6 +56,7 @@ public class ListDetaileActivity extends HeaderActivity<ActivityListDetaileBindi
         Glide.with(this).load(avObject.getString("imageIcon")).into(binding.icon);
         binding.name.setText(avObject.getString("companyName"));
         String count = avObject.getInt("peopleNum")+"人已放款";
+        int showBtn = avObject.getInt("showButton");
         SpannableString textSpanned1 = new SpannableString(count);
         textSpanned1.setSpan(new ForegroundColorSpan(Color.RED),
                 0, count.length()-4, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
@@ -89,10 +92,28 @@ public class ListDetaileActivity extends HeaderActivity<ActivityListDetaileBindi
         binding.cailiao.setText(avObject.getString("needdata"));
 
         binding.content.setText(avObject.getString("companyIntroduce"));
-
+        if(showBtn == 1){
+            binding.apply.setText("申请贷款");
+        }else{
+            binding.apply.setText("申请评估");
+        }
         binding.apply.setOnClickListener(v->{
-            startActivity(WebViewActivity.getIntence(this,avObject.getString("redirectUrl")));
+            if(showBtn == 1){
+
+                startActivity(WebViewActivity.getIntence(this,avObject.getString("redirectUrl")));
+            }else{
+                if(TextUtils.isEmpty(MyApp.getUsername())){
+                    startActivity(new Intent(this,LoginActivity.class));
+                }else{
+
+                    startActivity(new Intent(this,CollectionInfo.class));
+                }
+            }
+
         });
+
+
+
 
 
     }

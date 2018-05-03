@@ -75,6 +75,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements S
             @Override
             public void done(List<AVObject> list, AVException e) {
                 homeAdapter.setmList(list);
+
                 binding.swipeRefresh.setRefreshing(false);
             }
         });
