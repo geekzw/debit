@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".activity.CollectionInfo">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#ffffff"
+                android:text="借贷信息"
+                android:textColor="#afafaf"
+                android:textSize="13dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee" />
+
+
+            <com.gujian.debitapp.view.ItemView
+                android:id="@+id/DKYT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleName="贷款用途"/>
+            <com.gujian.debitapp.view.ItemView
+                android:id="@+id/DKJE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleName="贷款金额"/>
+            <com.gujian.debitapp.view.ItemView
+                android:id="@+id/DKSJ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleName="贷款时间"/>
+            <com.gujian.debitapp.view.ItemView
+                android:id="@+id/ZYSF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleName="职业身份"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#bce8e7e7"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#ffffff"
+                android:text="资产信息"
+                android:textColor="#afafaf"
+                android:textSize="13dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee" />
+
+            <com.gujian.debitapp.view.ItemView
+                android:id="@+id/XYKED"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleName="信用卡额度"/>
+            <com.gujian.debitapp.view.ItemView
+                android:id="@+id/MXFC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleName="名下房产"/>
+            <com.gujian.debitapp.view.ItemView
+                android:id="@+id/MXCC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleName="名下车产"/>
+            <com.gujian.debitapp.view.ItemView
+                android:id="@+id/XXJL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleName="信息记录"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#bce8e7e7"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#ffffff"
+                android:text="个人信息"
+                android:textColor="#afafaf"
+                android:textSize="13dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee" />
+
+            <com.gujian.debitapp.view.ItemView
+                android:id="@+id/WHCD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleName="文化程度"/>
+            <com.gujian.debitapp.view.ItemView
+                android:id="@+id/YSR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleName="月收入"/>
+            <com.gujian.debitapp.view.ItemView
+                android:id="@+id/SRXS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleName="收入形式"/>
+            <com.gujian.debitapp.view.ItemView
+                android:id="@+id/BDSB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleName="本地社保"/>
+            <com.gujian.debitapp.view.ItemView
+                android:id="@+id/BDGJJ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleName="本地公积金"/>
+            <com.gujian.debitapp.view.ItemView
+                android:id="@+id/GRZJ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleName="个人证件"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#bce8e7e7"/>
+
+            <TextView
+                android:id="@+id/apply"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="#00bfff"
+                android:text="提交评估"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>
